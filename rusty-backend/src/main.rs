@@ -2,10 +2,6 @@
 #![cfg_attr(not(any(feature = "export-abi", test)), no_main)]
 extern crate alloc;
 
-// /// Initializes a custom, global allocator for Rust programs compiled to WASM.
-// #[global_allocator]
-// static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
-
 use crate::storybook::{SimpleStory, Erc721Params};
 use alloy_primitives::{Address, U256};
 use storybook::{Erc721Error, NotAuthorized};
